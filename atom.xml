@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>追梦路上，不断前行~</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yuanyan.net/"/>
+  <updated>2019-10-30T03:35:04.361Z</updated>
+  <id>http://yuanyan.net/</id>
+  
+  <author>
+    <name>追逐梦想</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>常见Hexo命令整理与分享</title>
+    <link href="http://yuanyan.net/2019/10/29/%E5%B8%B8%E8%A7%81Hexo%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86%E4%B8%8E%E5%88%86%E4%BA%AB/"/>
+    <id>http://yuanyan.net/2019/10/29/常见Hexo命令整理与分享/</id>
+    <published>2019-10-29T06:11:46.000Z</published>
+    <updated>2019-10-30T03:35:04.361Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="常用指令"><a href="#常用指令" class="headerlink" title="常用指令"></a>常用指令</h1><h2 id="init"><a href="#init" class="headerlink" title="init"></a>init</h2><pre><code>$ hexo init [folder] </code></pre><p>新建一个网站。如果没有设置 folder ，Hexo 默认在目前的文件夹建立网站。</p><h2 id="new"><a href="#new" class="headerlink" title="new"></a>new</h2><pre><code>$ hexo new [layout]   ==  $ hexo n</code></pre><p>新建一篇文章。如果没有设置 layout 的话，默认使用 _config.yml 中的 default_layout 参数代替。如果标题包含空格的话，请使用引号括起来。</p><h2 id="generate"><a href="#generate" class="headerlink" title="generate"></a>generate</h2><pre><code>$ hexo generate  ==  $ hexo g</code></pre><p>生成静态文件。</p><table><thead><tr><th>选项</th><th>描述</th></tr></thead><tbody><tr><td>-d, –deploy</td><td>文件生成后立即部署网站</td></tr><tr><td>-w, –watch</td><td>监视文件变动</td></tr></tbody></table><h2 id="publish"><a href="#publish" class="headerlink" title="publish"></a>publish</h2><pre><code>$ hexo publish [layout] &lt;filename&gt;</code></pre><p>发表草稿。</p><h2 id="server"><a href="#server" class="headerlink" title="server"></a>server</h2><pre><code>$ hexo server  ==  $ hexo s</code></pre><p>启动服务器。默认情况下，访问网址为： <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a>。</p><table><thead><tr><th>选项</th><th>描述</th></tr></thead><tbody><tr><td>-p, –port</td><td>重设端口</td></tr><tr><td>-s, –static</td><td>只使用静态文件</td></tr><tr><td>-l, –log</td><td>启动日记记录，使用覆盖记录格式</td></tr></tbody></table><h2 id="deploy"><a href="#deploy" class="headerlink" title="deploy"></a>deploy</h2><pre><code>$ hexo deploy  ==  $ hexo d</code></pre><p>部署网站。</p><table><thead><tr><th>参数</th><th>描述</th></tr></thead><tbody><tr><td>-g, –generate</td><td>部署之前预先生成静态文件</td></tr></tbody></table><h2 id="render"><a href="#render" class="headerlink" title="render"></a>render</h2><pre><code>$ hexo render &lt;file1&gt; [file2] ...</code></pre><p>渲染文件。</p><table><thead><tr><th>参数</th><th>描述</th></tr></thead><tbody><tr><td>-o, –output</td><td>设置输出路径</td></tr></tbody></table><h2 id="migrate"><a href="#migrate" class="headerlink" title="migrate"></a>migrate</h2><pre><code>$ hexo migrate &lt;type&gt;</code></pre><p>从其他博客系统迁移内容。</p><h2 id="clean"><a href="#clean" class="headerlink" title="clean"></a>clean</h2><pre><code>$ hexo clean</code></pre><p>清除缓存文件 (db.json) 和已生成的静态文件 (public)。<br>在某些情况（尤其是更换主题后），如果发现您对站点的更改无论如何也不生效，您可能需要运行该命令。</p><h2 id="list"><a href="#list" class="headerlink" title="list"></a>list</h2><pre><code>$ hexo list &lt;type&gt;</code></pre><p>列出网站资料。</p><h2 id="version"><a href="#version" class="headerlink" title="version"></a>version</h2><pre><code>$ hexo version</code></pre><p>显示 Hexo 版本。</p><h1 id="选项"><a href="#选项" class="headerlink" title="选项"></a>选项</h1><h2 id="安全模式"><a href="#安全模式" class="headerlink" title="安全模式"></a>安全模式</h2><pre><code>$ hexo --safe</code></pre><p>在安全模式下，不会载入插件和脚本。当您在安装新插件遭遇问题时，可以尝试以安全模式重新执行。</p><h2 id="调试模式"><a href="#调试模式" class="headerlink" title="调试模式"></a>调试模式</h2><pre><code>$ hexo --debug</code></pre><p>在终端中显示调试信息并记录到 debug.log。当您碰到问题时，可以尝试用调试模式重新执行一次，并 提交调试信息到 GitHub。</p><h2 id="简洁模式"><a href="#简洁模式" class="headerlink" title="简洁模式"></a>简洁模式</h2><pre><code>$ hexo --silent</code></pre><p>隐藏终端信息。</p><h2 id="自定义配置文件的路径"><a href="#自定义配置文件的路径" class="headerlink" title="自定义配置文件的路径"></a>自定义配置文件的路径</h2><pre><code>$ hexo --config custom.yml</code></pre><p>自定义配置文件的路径，执行后将不再使用 _config.yml。</p><h2 id="显示草稿"><a href="#显示草稿" class="headerlink" title="显示草稿"></a>显示草稿</h2><pre><code>$ hexo --draft</code></pre><p>显示 source/_drafts 文件夹中的草稿文章。</p><h2 id="自定义-CWD"><a href="#自定义-CWD" class="headerlink" title="自定义 CWD"></a>自定义 CWD</h2><pre><code>$ hexo --cwd /path/to/cwd</code></pre><p>自定义当前工作目录（Current working directory）的路径。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;常用指令&quot;&gt;&lt;a href=&quot;#常用指令&quot; class=&quot;headerlink&quot; title=&quot;常用指令&quot;&gt;&lt;/a&gt;常用指令&lt;/h1&gt;&lt;h2 id=&quot;init&quot;&gt;&lt;a href=&quot;#init&quot; class=&quot;headerlink&quot; title=&quot;init&quot;&gt;&lt;/a
+      
+    
+    </summary>
+    
+    
+      <category term="关于Hexo" scheme="http://yuanyan.net/categories/%E5%85%B3%E4%BA%8EHexo/"/>
+    
+    
+      <category term="Hexo" scheme="http://yuanyan.net/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>出租车司机讲的“第一课”</title>
+    <link href="http://yuanyan.net/2019/10/12/%E5%87%BA%E7%A7%9F%E8%BD%A6%E5%8F%B8%E6%9C%BA%E8%AE%B2%E7%9A%84%E2%80%9C%E7%AC%AC%E4%B8%80%E8%AF%BE%E2%80%9D/"/>
+    <id>http://yuanyan.net/2019/10/12/出租车司机讲的“第一课”/</id>
+    <published>2019-10-12T03:50:49.000Z</published>
+    <updated>2019-10-12T04:24:07.694Z</updated>
+    
+    <content type="html"><![CDATA[<p><font color="#000000" size="3" face="微软雅黑"> &emsp;&emsp;事情发生在一周前，正是大家热议“XX第一课”的时候。出差到达某市，下飞机后打车去酒店，一路上与出租车司机闲谈，没想到却被司机结结实实的上了一课，收获颇丰。</font> </p><hr><p>&emsp;&emsp;飞机落地已经晚上九点多，和同事一起走入出租车排队打出区。这个城市的机场出租车候车区规划比较合理，每次排队不超过十分钟，基本上就能坐上出租车。这次排队的乘客比往常都多，不过乘客与出租车都在有序排队，很快就排到了我们。同事没有行李箱，坐到了前排，我去后面开后备箱放行李。这时司机快速下车，马上走到了车尾，伸手将我的行李拿过去，放到了后备箱。这一举动让我内心微微触动，此事虽小，但很少会有出租车司机这样去做，并且在内心里，我也习惯了自己放行李，不会要求司机帮忙。但是司机的这一举动，还是让我内心感觉非常温暖。</p><p>&emsp;&emsp;坐好后开车上路，我因为手机刚开机，很多未接来电、微信需要处理，没有说话，同事与司机有一句没一句的闲聊。工作处理完后，仔细听两人的对话，我才发现这个司机的与众不同。司机说道：“提拿行李其实是一件小时，但是我觉得如果客人去放行李，我自己坐在车上，心里感觉非常的不舒服。我们是服务行业，代表的不仅仅是我们个人，还是出租车行业、甚至是外地游客、朋友眼中这个城市的名片。虽然我们一天开车也比较累，但是该做的事情也一定要做好”。后来司机又说：“其实有些乘客也很理解我们，也不会要求司机这样去做。但同时有一些乘客也会觉得司机帮拿行李理所应当，甚至用命令的语气要求司机帮拿、帮取行李。一般遇到这样的乘客，我也会照做。因为我们不能用自己的道德标准去衡量别人，不管别人怎么想，我们都做好我们认为应该做好的事情就好了，不去想那么多。”的确，帮拿行李是小事，但是司机师傅的这个思想境界的确让我佩服，又有多少人能如此豁达，做事能坚持由心而不受情绪左右呢？</p><p><img src="https://i.imgur.com/JnbnpjG.jpg" alt></p><p>&emsp;&emsp;后来聊到了出租车司机的工作，司机说原来他是开滴滴专车的。去年看到专车整体形势不好，补贴减少了就算了一笔账，考虑到车辆折旧费、保养保险费等各项费用，不如出租车划算。并且只能线上接单，有些时候客源很不稳定，就考试申请了开出租车，原来买的车就折旧卖了出去。开出租车，一般人都是一辆车两个人，能分摊份钱，两个人各开12个小时，白天晚上一段时间轮换，但是他没有这样选择。司机说晚上开车伤身体，更伤夫妻感情。工作赚钱固然重要，但不能夜不归宿，夫妻长期缺少必要的沟通，感情必然会出现问题。况且后半夜其实用车量很少，早晨早高峰堵车也不赚钱，还不如开到凌晨一点左右，收车回家第二天九点以后再出来。这是我对司机肃然起敬的第二点，司机知道怎么算账，知道家庭与事业的天平如何平衡。我就对司机说道，您想的这么清楚，合理利用时间提高效率，估计您也是出租这个行业里面赚钱最多的吧？司机说赚最多不好说，毕竟还有个概率分布，但是他应该是收入最高的第一梯队里面。</p><p>&emsp;&emsp;司机说开出租经常会遇到一些不讲理的乘客，有时候讨价还价或者就是耍赖少给钱甚至不给钱。遇到这种情况很多司机会和对方争执，碰到极端情况甚至会因为一两块钱丧命。司机说这其实非常的不值得，即便报警求助，或者将乘车人痛打一顿，完全没有必要。因为一点车费对方挨揍，自己心里也会难受。而且耽误了时间，影响了情绪，也会影响到下一单生意。司机这种朴素的思想恰恰是最重要的一个“止损”的概念。当不愉快的事情发生，我们应该首先跳出情绪波动，理智地选择一个损失最小的方案。而车费往往是损失最小的，无论是和哪种结果相比都不值一提。<br>司机的这种价值观、大局观、人生观都非常令人钦佩。但最令我钦佩的是司机的积极乐观，临下车才得知，司机一共两个孩子，小儿子出生就发现先天性脑瘫。至今已经十岁多了，还是需要他妻子全天在家照顾，小儿子无论是身体还是思想都不能有大的波动，否则就会有生命危险。面对这样的生活，司机不抱怨、不沮丧。面对重病的儿子，司机不放弃、不嫌弃。相比之下，我们生活中所谓的苦又能算得上苦吗，我们还有什么事情是真正值得发愁的吗？</p><hr><blockquote><p><em>当生活像一首歌那样轻快流畅时,笑颜常开乃易事；而在一切事都不妙时仍能微笑的人,才活得有价值。</em>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; ——威尔科克斯【德】</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;font color=&quot;#000000&quot; size=&quot;3&quot; face=&quot;微软雅黑&quot;&gt; &amp;emsp;&amp;emsp;事情发生在一周前，正是大家热议“XX第一课”的时候。出差到达某市，下飞机后打车去酒店，一路上与出租车司机闲谈，没想到却被司机结结实实的上了一课，收获颇丰。&lt;/fo
+      
+    
+    </summary>
+    
+    
+      <category term="感悟" scheme="http://yuanyan.net/categories/%E6%84%9F%E6%82%9F/"/>
+    
+    
+      <category term="第一课" scheme="http://yuanyan.net/tags/%E7%AC%AC%E4%B8%80%E8%AF%BE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>newpage</title>
+    <link href="http://yuanyan.net/2019/10/11/newpage/"/>
+    <id>http://yuanyan.net/2019/10/11/newpage/</id>
+    <published>2019-10-11T04:07:51.000Z</published>
+    <updated>2019-10-11T07:56:38.395Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="☞引言☜"><a href="#☞引言☜" class="headerlink" title="☞引言☜"></a>☞引言☜</h1><p>一直以来，都想写点什么。写，不光是记录，也能帮助我们理清思路。很多事情想不清楚了，写一写，画一画，也就明白了。<br>为了写点东西，用过很多平台。最早喜欢论坛，觉得大家一起聊一聊挺好的，再加上论坛的博客功能，足够了。可是管理论坛太消耗时间了，如果没有时间管理，又觉得对不起论坛的众多会员，于是，论坛也就关闭了。<br>后来微信火起来了，开始用微信的公众号写文章。不过微信的公众号毕竟不太灵活，只有一个页面，统计功能不直观、留言处理也不容易。而且用微信公众号和新浪博客等类似的平台一样，数据都不在自己手中，总觉得不踏实。<br>后来开始自建博客，用过WordPress程序，但是发现wordpress程序过于臃肿，还需要浪费时间研究琢磨，用了一段时间停了。最近才发现Hexo其实很不错，程序简洁，使用方便，灵活度高。</p><h1 id="☞建站初衷☜"><a href="#☞建站初衷☜" class="headerlink" title="☞建站初衷☜"></a>☞建站初衷☜</h1><p>08年毕业，到现在一晃也十多年了。仔细数一数，人生没有几个十年，尤其是黄金阶段的十年。最终我们都是要做一些事情的，所以我们必须不断进步才行。经历的事情越来越多，我们总会有一些收获，无论酸甜苦辣，无论悲喜惊悚。这些经历我们不仅需要分析，更需要沉淀，当然也需要分享。因此谨以此博客分享一些闲言碎语，与有缘、有共同价值观的朋友共同探讨，共同进步。</p><h1 id="☞主要内容☜"><a href="#☞主要内容☜" class="headerlink" title="☞主要内容☜"></a>☞主要内容☜</h1><p>博客内容主要包含以下几个方面，不过可能会调整更新，但大范围不会有太多变化：</p><h3 id="人工智能"><a href="#人工智能" class="headerlink" title="人工智能"></a>人工智能</h3><p>主要介绍关于人工智能的技术原理及行业应用，与物联网结合，和我的工作也有相关，这个板块引用的文章比较多，毕竟我不是这方面的技术出身，不敢瞎说，避免误导大家。</p><h3 id="人生感悟"><a href="#人生感悟" class="headerlink" title="人生感悟"></a>人生感悟</h3><p>俗话说，读万卷书不如行万里路，行万里如不如阅人无数。多与人交往，学习他人的优点，能让我们更快的进步。因此这里分享一些感慨，有思考也有探讨。</p><h3 id="阅读有感"><a href="#阅读有感" class="headerlink" title="阅读有感"></a>阅读有感</h3><p>读一些高质量的书籍，的确使我们学习的快速方法，尤其是专业性比较强的书籍。读过以后，也许有些感慨，这这个板块下分享。</p><h1 id="☞结论☜"><a href="#☞结论☜" class="headerlink" title="☞结论☜"></a>☞结论☜</h1><p>好了，主要内容就是这些，博客计划开通留言功能，欢迎大家交流、探讨。谢谢！</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;☞引言☜&quot;&gt;&lt;a href=&quot;#☞引言☜&quot; class=&quot;headerlink&quot; title=&quot;☞引言☜&quot;&gt;&lt;/a&gt;☞引言☜&lt;/h1&gt;&lt;p&gt;一直以来，都想写点什么。写，不光是记录，也能帮助我们理清思路。很多事情想不清楚了，写一写，画一画，也就明白了。&lt;br&gt;为了写
+      
+    
+    </summary>
+    
+    
+      <category term="感悟" scheme="http://yuanyan.net/categories/%E6%84%9F%E6%82%9F/"/>
+    
+      <category term="开篇" scheme="http://yuanyan.net/categories/%E6%84%9F%E6%82%9F/%E5%BC%80%E7%AF%87/"/>
+    
+    
+      <category term="初衷" scheme="http://yuanyan.net/tags/%E5%88%9D%E8%A1%B7/"/>
+    
+      <category term="感悟" scheme="http://yuanyan.net/tags/%E6%84%9F%E6%82%9F/"/>
+    
+      <category term="主要内容" scheme="http://yuanyan.net/tags/%E4%B8%BB%E8%A6%81%E5%86%85%E5%AE%B9/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yuanyan.net/2019/10/10/hello-world/"/>
+    <id>http://yuanyan.net/2019/10/10/hello-world/</id>
+    <published>2019-10-10T10:55:26.403Z</published>
+    <updated>2019-10-11T07:33:43.763Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="bash">$ hexo new &quot;My New Post&quot;</code></pre><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+</feed>

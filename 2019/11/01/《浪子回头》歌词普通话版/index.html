@@ -2,9 +2,9 @@
 <html>
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
-  <title>常见Hexo命令整理与分享 | 追梦路上，不断前行~</title>
-  <meta name="keywords" content=" Hexo ">
-  <meta name="description" content="常见Hexo命令整理与分享 | 追梦路上，不断前行~">
+  <title>《浪子回头》歌词普通话版 | 追梦路上，不断前行~</title>
+  <meta name="keywords" content=" 初衷 , 感悟 ">
+  <meta name="description" content="《浪子回头》歌词普通话版 | 追梦路上，不断前行~">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="追逐梦想的个人博客，分享一些个人感悟，以及比较零碎的技术研究。">
 <meta name="keywords" content="追逐梦想,人工智能,AI,心理学,感悟,智慧园区">
@@ -300,9 +300,9 @@
 </aside>
 <div class="post">
     <div class="pjax">
-        <article id="post-常见Hexo命令整理与分享" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-《浪子回头》歌词普通话版" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">常见Hexo命令整理与分享</h1>
+        <h1 class="article-title">《浪子回头》歌词普通话版</h1>
     
     <div class="article-meta">
         
@@ -310,26 +310,30 @@
         
         <span class="book">
             
-                <a href="javascript:" data-rel="关于Hexo">关于Hexo</a>
+                <a href="javascript:" data-rel="其他">其他</a>/
+            
+                <a href="javascript:" data-rel="歌词">歌词</a>
             
         </span>
         
         
         <span class="tag">
             
-            <a href="javascript:" class="color5">Hexo</a>
+            <a href="javascript:" class="color3">初衷</a>
+            
+            <a href="javascript:" class="color3">感悟</a>
             
         </span>
         
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2019-10-30 11:35:04'>2019-10-29 14:11</time>
+        创建时间:<time class="date" title='更新时间: 2019-11-01 17:35:54'>2019-11-01 17:28</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:533</span>
+        <span>字数:657</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -348,7 +352,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#常用指令"><span class="toc-text">常用指令</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#init"><span class="toc-text">init</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#new"><span class="toc-text">new</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#generate"><span class="toc-text">generate</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#publish"><span class="toc-text">publish</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#server"><span class="toc-text">server</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#deploy"><span class="toc-text">deploy</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#render"><span class="toc-text">render</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#migrate"><span class="toc-text">migrate</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#clean"><span class="toc-text">clean</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#list"><span class="toc-text">list</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#version"><span class="toc-text">version</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#选项"><span class="toc-text">选项</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#安全模式"><span class="toc-text">安全模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#调试模式"><span class="toc-text">调试模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#简洁模式"><span class="toc-text">简洁模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#自定义配置文件的路径"><span class="toc-text">自定义配置文件的路径</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#显示草稿"><span class="toc-text">显示草稿</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#自定义-CWD"><span class="toc-text">自定义 CWD</span></a></li></ol></li></ol>
+        
     
 <style>
     .left-col .switch-btn,
@@ -364,83 +368,46 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="常用指令"><a href="#常用指令" class="headerlink" title="常用指令"></a>常用指令</h1><h2 id="init"><a href="#init" class="headerlink" title="init"></a>init</h2><pre><code>$ hexo init [folder] </code></pre><p>新建一个网站。如果没有设置 folder ，Hexo 默认在目前的文件夹建立网站。</p>
-<h2 id="new"><a href="#new" class="headerlink" title="new"></a>new</h2><pre><code>$ hexo new [layout]   ==  $ hexo n</code></pre><p>新建一篇文章。如果没有设置 layout 的话，默认使用 _config.yml 中的 default_layout 参数代替。如果标题包含空格的话，请使用引号括起来。</p>
-<h2 id="generate"><a href="#generate" class="headerlink" title="generate"></a>generate</h2><pre><code>$ hexo generate  ==  $ hexo g</code></pre><p>生成静态文件。</p>
-<table>
-<thead>
-<tr>
-<th>选项</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>-d, –deploy</td>
-<td>文件生成后立即部署网站</td>
-</tr>
-<tr>
-<td>-w, –watch</td>
-<td>监视文件变动</td>
-</tr>
-</tbody></table>
-<h2 id="publish"><a href="#publish" class="headerlink" title="publish"></a>publish</h2><pre><code>$ hexo publish [layout] &lt;filename&gt;</code></pre><p>发表草稿。</p>
-<h2 id="server"><a href="#server" class="headerlink" title="server"></a>server</h2><pre><code>$ hexo server  ==  $ hexo s</code></pre><p>启动服务器。默认情况下，访问网址为： <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a>。</p>
-<table>
-<thead>
-<tr>
-<th>选项</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>-p, –port</td>
-<td>重设端口</td>
-</tr>
-<tr>
-<td>-s, –static</td>
-<td>只使用静态文件</td>
-</tr>
-<tr>
-<td>-l, –log</td>
-<td>启动日记记录，使用覆盖记录格式</td>
-</tr>
-</tbody></table>
-<h2 id="deploy"><a href="#deploy" class="headerlink" title="deploy"></a>deploy</h2><pre><code>$ hexo deploy  ==  $ hexo d</code></pre><p>部署网站。</p>
-<table>
-<thead>
-<tr>
-<th>参数</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>-g, –generate</td>
-<td>部署之前预先生成静态文件</td>
-</tr>
-</tbody></table>
-<h2 id="render"><a href="#render" class="headerlink" title="render"></a>render</h2><pre><code>$ hexo render &lt;file1&gt; [file2] ...</code></pre><p>渲染文件。</p>
-<table>
-<thead>
-<tr>
-<th>参数</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>-o, –output</td>
-<td>设置输出路径</td>
-</tr>
-</tbody></table>
-<h2 id="migrate"><a href="#migrate" class="headerlink" title="migrate"></a>migrate</h2><pre><code>$ hexo migrate &lt;type&gt;</code></pre><p>从其他博客系统迁移内容。</p>
-<h2 id="clean"><a href="#clean" class="headerlink" title="clean"></a>clean</h2><pre><code>$ hexo clean</code></pre><p>清除缓存文件 (db.json) 和已生成的静态文件 (public)。<br>在某些情况（尤其是更换主题后），如果发现您对站点的更改无论如何也不生效，您可能需要运行该命令。</p>
-<h2 id="list"><a href="#list" class="headerlink" title="list"></a>list</h2><pre><code>$ hexo list &lt;type&gt;</code></pre><p>列出网站资料。</p>
-<h2 id="version"><a href="#version" class="headerlink" title="version"></a>version</h2><pre><code>$ hexo version</code></pre><p>显示 Hexo 版本。</p>
-<h1 id="选项"><a href="#选项" class="headerlink" title="选项"></a>选项</h1><h2 id="安全模式"><a href="#安全模式" class="headerlink" title="安全模式"></a>安全模式</h2><pre><code>$ hexo --safe</code></pre><p>在安全模式下，不会载入插件和脚本。当您在安装新插件遭遇问题时，可以尝试以安全模式重新执行。</p>
-<h2 id="调试模式"><a href="#调试模式" class="headerlink" title="调试模式"></a>调试模式</h2><pre><code>$ hexo --debug</code></pre><p>在终端中显示调试信息并记录到 debug.log。当您碰到问题时，可以尝试用调试模式重新执行一次，并 提交调试信息到 GitHub。</p>
-<h2 id="简洁模式"><a href="#简洁模式" class="headerlink" title="简洁模式"></a>简洁模式</h2><pre><code>$ hexo --silent</code></pre><p>隐藏终端信息。</p>
-<h2 id="自定义配置文件的路径"><a href="#自定义配置文件的路径" class="headerlink" title="自定义配置文件的路径"></a>自定义配置文件的路径</h2><pre><code>$ hexo --config custom.yml</code></pre><p>自定义配置文件的路径，执行后将不再使用 _config.yml。</p>
-<h2 id="显示草稿"><a href="#显示草稿" class="headerlink" title="显示草稿"></a>显示草稿</h2><pre><code>$ hexo --draft</code></pre><p>显示 source/_drafts 文件夹中的草稿文章。</p>
-<h2 id="自定义-CWD"><a href="#自定义-CWD" class="headerlink" title="自定义 CWD"></a>自定义 CWD</h2><pre><code>$ hexo --cwd /path/to/cwd</code></pre><p>自定义当前工作目录（Current working directory）的路径。</p>
+        <pre><code>               浪子回头(歌词音译)</code></pre><p>  烟一支一支一支地点<br>婚~叽 gī 叽 gī 叽 gī 爹 diang</p>
+<p>  酒一杯一杯一杯地干<br>就~叽 boy 叽 boy 叽 boy 爹 荡</p>
+<p>  请你要体谅我<br>呛 哩 爱咿 体 谅 哇</p>
+<p>  我酒量不好别给我挖坑<br>哇 酒 量 波 候 麦 嘎 卧 葱 坑</p>
+<p>  时间一天一天一天的走<br>西干-叽 刚 叽 刚 叽 刚 爹 走~乌</p>
+<p>  汗一滴一滴一滴的流<br>锅<del>叽 滴 叽 滴 叽 滴 爹 老</del>嗷~乌</p>
+<p>  有一天我们都老<br>乌叽刚-囊隆老</p>
+<p>  带妻子一起<br>cua 波 gian 到 丁</p>
+<p>  浪子回头<br>隆 子 were 涛</p>
+<p>  亲爱的 可爱的 英俊的 朋友<br>亲爱爹 阔爱爹 颠多爹~扁优</p>
+<p>  垃圾的 没品的 没出息的 朋友<br>公扫爹 摸拼爹 摸多优泥~扁优</p>
+<p>  在坎坷的路骑我二流摩托车<br>滴 康 K 诶 哆 咔 哇 luang 嘭 O 哆 哇 咿</p>
+<p>  反正我的人生像是狗屎<br>怀 滴 歪 井 熊 刚 那 搞 赛</p>
+<p>  我没钱没妻没子只有一条命<br>瓦 波 七 波 窝 波 giang 刚 那 几 掉 命</p>
+<p>  朋友阿<br>扁 优 哇</p>
+<p>  一起来赌吧<br>到 丁 来 boy 啊</p>
+<p>  烟一支一支一支地点<br>婚~叽 gī 叽 gī 叽 gī 爹 diang</p>
+<p>  酒一杯一杯一杯地干<br>就~叽 boy 叽 boy 叽 boy 爹 荡</p>
+<p>  请你要体谅我<br>呛 哩 爱咿 体 谅 哇</p>
+<p>  我酒量不好别给我挖坑<br>哇 酒 量 波 候 麦 嘎 卧 葱 坑</p>
+<p>  时间一天一天一天的走<br>西干-叽 刚 叽 刚 叽 刚 爹 走~乌</p>
+<p>  汗一滴一滴一滴的流<br>锅<del>叽 滴 叽 滴 叽 滴 爹老</del>嗷~乌</p>
+<p>  有一天我们都老<br>乌叽刚-囊隆老</p>
+<p>  带妻子一起<br>cua 波 gian 到 丁</p>
+<p>  浪子回头<br>隆 子 were 涛</p>
+<p>  在坎坷的路骑我二流摩托车<br>滴 康 K 诶 哆 咔 哇 luang 嘭 O 哆 哇 咿</p>
+<p>  反正我的人生像是狗屎<br>怀 滴 歪 井 熊 刚 那 搞 赛</p>
+<p>  我没钱没妻没子只有一条命<br>瓦 波 七 波 窝 波 giang 刚 那 几 掉 命</p>
+<p>  朋友阿<br>扁 优 哇</p>
+<p>  一起来赌吧<br>到 丁 来 boy 啊</p>
+<p>  烟一支一支一支地点<br>婚~叽 gī 叽 gī 叽 gī 爹 diang</p>
+<p>  酒一杯一杯一杯地干<br>就~叽 boy 叽 boy 叽 boy 爹 荡</p>
+<p>  请你要体谅我<br>呛 哩 爱咿 体 谅 哇</p>
+<p>  我酒量不好别给我挖坑<br>哇 酒 量 波 候 麦 嘎 卧 葱 坑</p>
+<p>  时间一天一天一天的走<br>西干-叽 刚 叽 刚 叽 刚 爹 走~乌</p>
+<p>  汗一滴一滴一滴的流<br>锅<del>叽 滴 叽 滴 叽 滴 爹老</del>嗷~乌</p>
+<p>  有一天我们都老<br>乌叽刚-囊隆老</p>
+<p>  带妻子一起<br>cua 波 gian 到 丁</p>
+<p>  带妻子一起<br>cua 波 gian 到 丁</p>
+<p>  带妻子一起<br>cua 波 gian 到 丁</p>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 mail@yuanyan.net </span>
@@ -454,12 +421,12 @@
 
 
 <div class="article_copyright">
-    <p><span class="copy-title">文章标题:</span>常见Hexo命令整理与分享</p>
-    <p><span class="copy-title">文章字数:</span><span class="post-count">533</span></p>
+    <p><span class="copy-title">文章标题:</span>《浪子回头》歌词普通话版</p>
+    <p><span class="copy-title">文章字数:</span><span class="post-count">657</span></p>
     <p><span class="copy-title">本文作者:</span><a href="javascript:void(0)" title="追逐梦想">追逐梦想</a></p>
-    <p><span class="copy-title">发布时间:</span>2019-10-29, 14:11:46</p>
-    <p><span class="copy-title">最后更新:</span>2019-10-30, 11:35:04</p>
-    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/10/29/常见Hexo命令整理与分享/" title="常见Hexo命令整理与分享">http://yuanyan.net/2019/10/29/常见Hexo命令整理与分享/</a>
+    <p><span class="copy-title">发布时间:</span>2019-11-01, 17:28:21</p>
+    <p><span class="copy-title">最后更新:</span>2019-11-01, 17:35:54</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/11/01/《浪子回头》歌词普通话版/" title="《浪子回头》歌词普通话版">http://yuanyan.net/2019/11/01/《浪子回头》歌词普通话版/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
     </p>
